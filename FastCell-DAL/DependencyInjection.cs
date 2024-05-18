@@ -1,4 +1,6 @@
-﻿using FC_DAL.Core.Contracts;
+﻿using FastCell_DAL.Core.Contracts;
+using FastCell_DAL.Core.Repositories;
+using FC_DAL.Core.Contracts;
 using FC_DAL.Core.IConfiguration;
 using FC_DAL.Core.Repositories;
 using FC_DAL.Data;
@@ -14,6 +16,8 @@ namespace FC_DAL
             services.AddScoped<ICellphoneRepository, CellPhoneRepository>();
             services.AddScoped<IProductRepairRepository, ProductRepairRepository>();
             services.AddScoped<IServicePriceRepository, ServicePriceRepository>();
+            services.AddScoped<IManufacturerRepository, ManufacturerRepository>();
+            services.AddScoped<IProductModelRepository, ProductModelRepository>();
 
             return services;
         }

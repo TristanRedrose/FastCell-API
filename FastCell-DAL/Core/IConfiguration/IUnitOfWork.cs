@@ -1,4 +1,5 @@
-﻿using FC_DAL.Core.Contracts;
+﻿using FastCell_DAL.Core.Contracts;
+using FC_DAL.Core.Contracts;
 
 namespace FC_DAL.Core.IConfiguration
 {
@@ -7,6 +8,8 @@ namespace FC_DAL.Core.IConfiguration
         ICellphoneRepository CellPhones{ get; }
         IProductRepairRepository RepairServices { get; }
         IServicePriceRepository ServicePrices { get; }
+        IProductModelRepository ProductModels { get; }
+        IManufacturerRepository Manufacturers { get; }
         Task CompleteAsync();
     }
 }
